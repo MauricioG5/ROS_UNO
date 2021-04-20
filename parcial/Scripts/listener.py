@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+
+
+import rospy
+from std_msgs.msg import String
+from std_msgs.msg import Char
+
+def callback(data):
+    rospy.loginfo(data.data)
+    
+def callback1(data):
+    rospy.loginfo(data.data)
+    
+def callback2(data):
+    rospy.loginfo(data.data)
+
+def listener():
+
+    # In ROS, nodes are uniquely named. If two nodes with the same
+    # name are launched, the previous one is kicked off. The
+    # anonymous=True flag means that rospy will choose a unique
+    # name for our 'listener' node so that multiple listeners can
+    # run simultaneously.
+	rospy.init_node('listener', anonymous=False)
+	rospy.Subscriber('Char_E', Char, callback)
+	rospy.Subscriber('Char_F', Char, callback1)
+	rospy.Subscriber('Char_G', Char, callback2)
+
+    # spin() simply keeps python from exiting until this node is stopped
+	rospy.spin()
+
+if __name__ == '__main__':
+	try:
+		listener()			#Llamar a la función "Bool"
+	except rospy.ROSInterruptException:		#Excepción para evitar que se blquee el programa
+		pass
