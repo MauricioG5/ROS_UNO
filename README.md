@@ -2,3 +2,8 @@
 
 ## DESCRIIPTION
 Hola, bienvendos a ROS
+
+-Hola, 
+-bienvendos 
+-a 
+-ROS
