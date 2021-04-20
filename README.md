@@ -1,13 +1,6 @@
 # ROS_UNO
 
 ## DESCRIIPTION
-Hola, bienvendos a ROS
 
-- Hola, 
-- bienvendos 
-- a 
-- ROS
-
-1. hola
-2. todo
-3. bien
+This package contains ROS nodes from A to H wich post and subscribe different type of variables including Bool, Int16, FLoat32, Char and String.
+Finally, there is a Node with a serial comunication between ROS and Arduno for real world implementation 
