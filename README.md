@@ -20,6 +20,10 @@ Finally, there is a Node with a serial comunication between ROS and Arduno for r
 - H Node: It subscribes to a char topic from Nodes B,C and D, wich are converted to a 0 - 100% value wich is published on a String topic.
 - Arduino Node: It subscribes to a String topic from Node H, it uses te value to set a motor Speed, it also takes the value from 3 sensors and publishes a String with the sensors value. 
 
+## TOPICS
+
+
+
 ## EXECUTION
 
 **To execute the program, it may be done on this way:**
