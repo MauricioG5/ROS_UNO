@@ -60,20 +60,20 @@ Finally, there is a Node with a serial comunication between ROS and Arduno for r
 **To execute the program, it may be done on this way:**
 
 1. Execute roscore:
-> roscore
+> $ roscore
 
 2. Execute the following command from a different terminal:
 > rosrun <folder_name> <scrypt_name>.py
 
 3. To visualize the correct linking between nodes, this command can be used:
-> rqt_graph
+> $ rqt_graph
 
 ## ARDUINO NODE EXECUTION
 
 - In order tu execute Arduino node, the first thing must be done is to give permisions to the serial port, it can be done this way:
-> sudo chmod 777 /dev/ttyACM0
+> $ sudo chmod 777 /dev/ttyACM0
 o
-> sudo chmod 777 /dev/ttyUSB0
+> $ sudo chmod 777 /dev/ttyUSB0
 
 - Load the code on the Arduino board and execute the following commands:
 > $ roscore
