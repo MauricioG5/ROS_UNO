@@ -75,9 +75,7 @@ Finally, there is a Node with a serial comunication between ROS and Arduno for r
 o
 > $ sudo chmod 777 /dev/ttyUSB0
 
-- Load the code on the Arduino board and execute the following commands:
-> $ roscore
-
+- Load the code on the Arduino board and execute the following command:
 
 > $ rosrun rosserial_python serial_node.py /dev/ttyACM0 
 
