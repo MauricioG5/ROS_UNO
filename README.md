@@ -22,7 +22,14 @@ Finally, there is a Node with a serial comunication between ROS and Arduno for r
 
 ## TOPICS
 
+1. From A Node:
 
+- Booleano: It publishes binary numbers (0 or 1) as ROS Bool type variable at 10 hertz frequency. This topic is published by A Node
+- Entero: It publishes int numbers as ROS Int16 type variable 10 hertz frequency. This topic is published by A Node
+- FLotante: It publishes float numbers as ROS FLoat32 type variable 10 hertz frequency. This topic is published by A Node
+
+2. From B Node: 
+- String_B: It publishes a String as ROS String with the following format: "Alto=<High_value>%/Medio=<Med_value>%/Bajo=<Low_value>%
 
 ## EXECUTION
 
