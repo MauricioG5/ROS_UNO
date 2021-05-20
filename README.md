@@ -43,6 +43,6 @@ o
 > rosrun rosserial_python serial_node.py /dev/ttyACM0 
 
 
-# Autor
+# Author
 
 - Mauricio Gómez Menjura
