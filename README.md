@@ -76,8 +76,10 @@ o
 > sudo chmod 777 /dev/ttyUSB0
 
 - Load the code on the Arduino board and execute the following commands:
-> roscore
-> rosrun rosserial_python serial_node.py /dev/ttyACM0 
+> $ roscore
+
+
+> $ rosrun rosserial_python serial_node.py /dev/ttyACM0 
 
 
 # AUTHORS
