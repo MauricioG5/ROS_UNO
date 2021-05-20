@@ -8,6 +8,8 @@ Finally, there is a Node with a serial comunication between ROS and Arduno for r
 
 (H -> ARDUINO, ARDUINO -> A), these ROS nodes are intended to use a Fuzzy logic controller to consider 3 signals and make a decision for a final actuator.
 
+## NODES
+
 - A Node: Subscribes to a String topic from Arduino and substract from it the value of each sensor. It publishes each value on a differen topic: Bool, Int16 and Float32  
 - B Node: It subscribes to a a Bool topic from Node A, calculates the low/medium/high level. It publishes a String wich contains each of calculated values.
 - C Node: It subscribes to an Int topic from Node A, calculates the low/medium/high level. It publishes a String wich contains each of calculated values.
@@ -18,7 +20,7 @@ Finally, there is a Node with a serial comunication between ROS and Arduno for r
 - H Node: It subscribes to a char topic from Nodes B,C and D, wich are converted to a 0 - 100% value wich is published on a String topic.
 - Arduino Node: It subscribes to a String topic from Node H, it uses te value to set a motor Speed, it also takes the value from 3 sensors and publishes a String with the sensors value. 
 
-## Execution
+## EXECUTION
 
 **To execute the program, it may be done on this way:**
 
@@ -31,7 +33,7 @@ Finally, there is a Node with a serial comunication between ROS and Arduno for r
 3. To visualize the correct linking between nodes, this command can be used:
 > rqt_graph
 
-## Arduino Node Execution
+## ARDUINO NODE EXECUTION
 
 - In order tu execute Arduino node, the first thing must be done is to give permisions to the serial port, it can be done this way:
 > sudo chmod 777 /dev/ttyACM0
@@ -43,7 +45,7 @@ o
 > rosrun rosserial_python serial_node.py /dev/ttyACM0 
 
 
-# Authors
+# AUTHORS
 
 - Mauricio Gómez Menjura
 - Eymer S. Tapias
