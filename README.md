@@ -25,16 +25,36 @@ Finally, there is a Node with a serial comunication between ROS and Arduno for r
 1. From A Node:
 
 - Booleano: It publishes binary numbers (0 or 1) as ROS Bool type variable at 10 hertz frequency. 
-- Entero: It publishes int numbers as ROS Int16 type variable 10 hertz frequency. 
-- FLotante: It publishes float numbers as ROS FLoat32 type variable 10 hertz frequency. 
+- Entero: It publishes int numbers as ROS Int16 type variable at 10 hertz frequency. 
+- FLotante: It publishes float numbers as ROS FLoat32 type variable at 10 hertz frequency. 
 2. From B Node: 
-- String_B: It publishes a String as ROS String with the following format: "Alto=<High_value>%/Medio=<Med_value>%/Bajo=<Low_value>%.
+- String_B: It publishes a ROS String with the following format: "Alto=<High_value>%/Medio=<Med_value>%/Bajo=<Low_value>% at 1 hertz frequency.
 
 3. From C Node: 
-- String_C: It publishes a String as ROS String with the following format: "Alto=<High_value>%/Medio=<Med_value>%/Bajo=<Low_value>%.
+- String_C: It publishes a ROS String with the following format: "Alto=<High_value>%/Medio=<Med_value>%/Bajo=<Low_value>% at 1 hertz frequency.
 
 4. From D Node: 
-- String_D: It publishes a String as ROS String with the following format: "Alto=<High_value>%/Medio=<Med_value>%/Bajo=<Low_value>%.
+- String_D: It publishes a ROS String with the following format: "Alto= <High_value> %/Medio= <Med_value> %/Bajo= <Low_value> % at 1 hertz frequency.
+
+5. From E Node: 
+- Char_E: It publishes a ROS char which can be 65, 77 or 66 to represent A, M and B respectively at 0.5 hertz frequency.
+
+
+6. From F Node: 
+- Char_F: It publishes a ROS char which can be 65, 77 or 66 to represent A, M and B respectively at 0.5 hertz frequency.
+
+
+7. From G Node: 
+- Char_G: It publishes a ROS char which can be 65, 77 or 66 to represent A, M and B respectively at 0.5 hertz frequency.
+
+
+8. From H Node: 
+- Int_H: It publishes int numbers as ROS Int16 type variable at 0.2 hertz frequency. 
+
+
+9. From Arduino Node: 
+- String_Ard: It publishes a ROS String type variable with the following format: Bool= <boolean_value> Int=<Int_value> Float= <float_value> at 100 hertz frequency. 
+
 ## EXECUTION
 
 **To execute the program, it may be done on this way:**
